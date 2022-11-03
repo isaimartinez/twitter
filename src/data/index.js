@@ -8,7 +8,7 @@ import portada from '../assets/portada.jpeg'
 import DiaDeMuertos from '../assets/DiaDeMuertos.png'
 import Ucrania from '../assets/Ucrania.jpeg'
 import Chilangos from '../assets/Chilangos.jpeg'
-
+import Elon from '../assets/elon.jpeg'
 // ============ VIDS ============
 import FasVid from '../assets/Fascinating.mp4'
 import PerVid from '../assets/Personas.mp4'
@@ -26,7 +26,38 @@ export const profile = {
   following: 15,
 }
 
-export const tweets = [{text: "1"}]
+export const tweets = [
+  {
+    name: "Elon Musk",
+    user: "ElonMusk",
+    timeAgo: "31 may",
+    description: "",
+    profilePic: "https://pbs.twimg.com/profile_images/1587290337587904512/Y4s_eu5O_400x400.jpg",
+    comments: "46,9 mil",
+    share: "161,7 mil",
+    likes: "1.4 M",
+    isVideo: false,
+    img: Elon,
+    info: {
+      text: "Retwitteaste",
+      icon: <FaRetweet />
+    },
+  },{
+    name: "adrian marcelo",
+    user: "adrianm10",
+    timeAgo: "23 mayo",
+    description: "Soy malo para los putazos, pero contigo me hago bueno, hijo de tu perra madre.",
+    profilePic: "https://pbs.twimg.com/profile_images/1582103083345117191/0YbnC3N4_400x400.jpg",
+    comments: "109",
+    share: "151",
+    likes: "3,419",
+    isVideo: false,
+    info: {
+      text: "Retwitteaste",
+      icon: <FaRetweet />
+    },
+  }
+]
 
 export const feed = [
   {

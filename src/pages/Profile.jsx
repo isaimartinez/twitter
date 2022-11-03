@@ -2,6 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import {FaArrowLeft, FaMapMarker, FaGift, FaCalendar} from 'react-icons/fa'
 import {profile, tweets} from '../data'
+import {Tweet} from '../components'
 
 const Profile = () => {
   return (
@@ -54,6 +55,11 @@ const Profile = () => {
         </div>
         
       </div>
+      {
+        tweets.map((item,i) => (
+          <Tweet data={item}/>
+        ))
+      }
     </div>
   )
 }
