@@ -2,6 +2,7 @@ import React from 'react'
 import {Button} from './'
 import { sidebarLinks, profile } from '../data'
 import {FaEllipsisH} from 'react-icons/fa'
+import {Link, NavLink} from 'react-router-dom'
 
 const Sidebar = () => {
   return (
@@ -9,10 +10,12 @@ const Sidebar = () => {
       <div className='flex flex-col flex-initial justify-around  gap-y-10 mt-5 w-60'>
         {
           sidebarLinks.map((item,i) => (
-            <div className='flex flex-row text-white text-2xl items-center cursor-pointer' key={i}>
-              {item.icon}
-              <span className='ml-5'>{item.name}</span>
-            </div>
+            <Link to={item.name.trim()}>
+              <div className='flex flex-row text-white text-2xl items-center cursor-pointer' key={i}>
+                {item.icon}
+                <span className='ml-5'>{item.name}</span>
+              </div>
+            </Link>
           ))
         }
         <Button text={"Twittear"} bgColor="#1D9BF0" textStyle={"text-white text-lg font-semibold"} h="12"

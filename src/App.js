@@ -13,8 +13,8 @@ function App() {
           <div className='flex flex-1 border-x-2 border-slate-100	'>
             <Routes>
               <Route path='/' element={<Feed/>}/>
-              <Route path='/Feed' element={<Feed/>}/>
-              <Route path='/Profile' element={<Profile/>}/>
+              <Route path='/Inicio' element={<Feed/>}/>
+              <Route path='/Perfil' element={<Profile/>}/>
 
             </Routes>
           </div>

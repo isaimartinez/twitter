@@ -4,6 +4,7 @@ import {  FaHouseUser, FaEllipsisH, FaTwitter, FaHashtag, FaBell, FaEnvelope,
 } from 'react-icons/fa'
 // ============ PICS ============
 import profilePic from '../assets/Profile.jpeg'
+import portada from '../assets/portada.jpeg'
 import DiaDeMuertos from '../assets/DiaDeMuertos.png'
 import Ucrania from '../assets/Ucrania.jpeg'
 import Chilangos from '../assets/Chilangos.jpeg'
@@ -15,8 +16,17 @@ import PerVid from '../assets/Personas.mp4'
 export const profile = {
   name: "Isaí Martínez",
   user: "MtzVentura17",
-  profilePic: profilePic
+  profilePic: profilePic,
+  portada,
+  description: "The greatest successes come to having the freedom to fail",
+  location: "San Luis, México",
+  nacimiento: "17 de Noviembre de 2001",
+  seUnioen: "Se unió en febrero de 2019 ",
+  followers: 50,
+  following: 15,
 }
+
+export const tweets = [{text: "1"}]
 
 export const feed = [
   {
