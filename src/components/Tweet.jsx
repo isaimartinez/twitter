@@ -16,11 +16,11 @@ const Tweet = ({data}) => {
         </div>
         <div className='flex flex-col pl-3 w-full'>
           <div className='flex flex-row gap-1 items-top'>
-            <p className='text-white font-bold'>{data.name}</p>
+            <p className='text-black dark:text-white font-bold'>{data.name}</p>
             <p className='text-slate-400 text-sm'>@{data.user} | {data.timeAgo}</p>
           </div>
           <div className='flex'>
-            <p className='text-white text-base'>{data.description}</p>
+            <p className='text-black dark:text-white text-base'>{data.description}</p>
           </div>
           <div className='flex cursor-pointer mt-2'>
             {

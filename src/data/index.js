@@ -13,6 +13,12 @@ import Elon from '../assets/elon.jpeg'
 import FasVid from '../assets/Fascinating.mp4'
 import PerVid from '../assets/Personas.mp4'
 
+export const colors = {
+  grisLight: "#F7F9F9",
+  grisDark: "#202327",
+  
+}
+
 export const profile = {
   name: "Isaí Martínez",
   user: "MtzVentura17",

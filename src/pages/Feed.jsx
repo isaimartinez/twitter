@@ -6,14 +6,14 @@ import {Link} from 'react-router-dom'
 
 const Feed = () => {
   return (
-    <div className='flex flex-col w-full p-2'>
+    <div className='flex flex-col w-full p-2 bg-white dark:bg-black'>
       <div className='flex flex-col gap-5 pb-2' style={{borderBottomWidth: 1, borderBottomColor: "#2F3336"}}>
         <div className='flex justify-between w-full flex-row'>
           <div className='flex items-center'>
-            <p className='text-white font-bold text-2xl'>Inicio</p>
+            <p className='text-black dark:text-white font-bold text-2xl'>Inicio</p>
           </div>
           <div className='flex items-center'>
-            <FaHandSparkles color='white'/>
+            <FaHandSparkles className='text-black dark:text-white'/>
           </div>
         </div>
         <div className='flex flex-row gap-5'>
