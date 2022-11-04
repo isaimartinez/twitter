@@ -22,7 +22,7 @@ const Tweet = ({data}) => {
           <div className='flex'>
             <p className='text-white text-base'>{data.description}</p>
           </div>
-          <div className='flex cursor-pointer'>
+          <div className='flex cursor-pointer mt-2'>
             {
               data.isVideo ? (
                 <>
@@ -41,20 +41,20 @@ const Tweet = ({data}) => {
               )
             }
           </div>
-          <div className='flex flex-row'>
-            <div className='flex flex-1 text-slate-400 items-center gap-1 cursor-pointer'>
+          <div className='flex flex-row mt-2'>
+            <div className='flex flex-1 text-slate-400 text-sm items-center gap-1 cursor-pointer'>
               <FaComment />
               <p>{data.comments}</p>
             </div>
-            <div className='flex flex-1 text-slate-400 items-center gap-1 cursor-pointer'>
+            <div className='flex flex-1 text-slate-400 text-sm items-center gap-1 cursor-pointer'>
               <FaRetweet />
               <p>{data.share}</p>
             </div>
-            <div className='flex flex-1 text-slate-400 items-center gap-1 cursor-pointer'>
+            <div className='flex flex-1 text-slate-400 text-sm items-center gap-1 cursor-pointer'>
               <FaHeart />
               <p>{data.likes}</p>
             </div>
-            <div className='flex flex-1 text-slate-400 items-center gap-1 cursor-pointer'>
+            <div className='flex flex-1 text-slate-400 text-sm items-center gap-1 cursor-pointer'>
               <FaExternalLinkAlt />
             </div>
           </div>

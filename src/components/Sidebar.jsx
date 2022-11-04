@@ -22,7 +22,7 @@ const Sidebar = () => {
           rounded={"xl"}
         />
       </div>  
-      <div className='flex flex-auto flex-col justify-end w-60 mb-5'>
+      <Link className='flex flex-auto flex-col justify-end w-60 mb-5' to="/Perfil">
         <div className='flex flex-row cursor-pointer'>
           <div>
             <img src={profile.profilePic} 
@@ -37,7 +37,7 @@ const Sidebar = () => {
             <FaEllipsisH color='white'/>
           </div>
         </div>
-      </div>
+      </Link>
     </div>
   )
 }

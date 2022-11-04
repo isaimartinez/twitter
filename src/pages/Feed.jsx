@@ -2,6 +2,7 @@ import React from 'react'
 import {FaHandSparkles, FaRetweet, FaComment, FaExternalLinkAlt, FaHeart} from 'react-icons/fa'
 import { profile, options, feed } from '../data'
 import {Button, Tweet} from '../components/'
+import {Link} from 'react-router-dom'
 
 const Feed = () => {
   return (
@@ -16,9 +17,9 @@ const Feed = () => {
           </div>
         </div>
         <div className='flex flex-row gap-5'>
-          <div className='flex w-16 h-16'>
+          <Link className='flex w-16 h-16' to="/Perfil">
             <img src={profile.profilePic} alt="Profile Picture" className='rounded-full' />
-          </div>
+          </Link>
           <div className='flex items-center'>
             <input type="text" style={{backgroundColor: "transparent"}} placeholder="¿Qué estás pensando?"/>
           </div>
